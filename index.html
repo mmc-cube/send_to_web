@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>文件下载入口</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>文件下载入口</h1>
+        <p class="subtitle">输入收到的密码（即文件夹名）以下载对应内容。</p>
+      </header>
+      <form id="downloadForm" class="form" novalidate>
+        <label for="passwordInput">密码</label>
+        <input
+          id="passwordInput"
+          name="password"
+          type="text"
+          autocomplete="off"
+          placeholder="例如：user001"
+          maxlength="64"
+          required
+        />
+        <button id="downloadButton" type="submit">下载</button>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
